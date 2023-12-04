@@ -140,28 +140,31 @@
 
     <h1>Login / Create Your Account</h1>
 
-    <div class="log-container">
+  
+<div class="log-container">
   <form id="loginForm" action="/login" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Login</button>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit" onclick="login()">Login</button>
   </form>
 
   <form id="registerForm" action="/register" method="post">
-    <label for="newUsername">First Name:</label>
-    <input type="text" id="newUsername" name="username" required>
-    <label for="newUsername">Last Name:</label>
-    <input type="text" id="LastName" name="username" required>
-    <label for="email">Email Address:</label>
-    <input type="text" id="email" name="email" required>
-    <label for="newPassword">New Password:</label>
-    <input type="password" id="newPassword" name="password" required>
-    <label for="newPassword">Confirm Password:</label>
-    <input type="password" id="newPassword" name="password" required>
-    <button type="submit">Create Account</button>
+      <label for="newUsername">First Name:</label>
+      <input type="text" id="newUsername" name="username" required>
+      <label for="LastName">Last Name:</label>
+      <input type="text" id="LastName" name="username" required>
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="newPassword">New Password:</label>
+      <input type="password" id="newPassword" name="password" required>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" name="password" required>
+      <button type="submit" onclick="register()">Create Account</button>
   </form>
+
+  <button id="logoutBtn" onclick="logout()">Logout</button>
 </div>
 
   <div class="container3">
@@ -169,12 +172,12 @@
         <div class="col-md-6">
             <h2 class="mb-3">Contact us here!</h2>
             <div class="form-box">
-            <form>
-                <li><label for="name">Enter Firt Name:</label>
-                <input type="text" id="name" name="name" required></li>
+            <form id="contactSubmit">
+                <li><label for="firstName">Enter Firt Name:</label>
+                <input type="text" id="firstName" name="firstName" required></li>
 
-                <li><label for="name">Enter Last Name:</label>
-                <input type="text" id="name" name="name" required></li>
+                <li><label for="lastName">Enter Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required></li>
 
                 <li><label for="email">Enter Email Address:</label>
                 <input type="email" id="email" name="email" required></li>
@@ -182,7 +185,7 @@
                 <Li><label for="comments">Service you are enquiring about:</label>
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea></li>
 
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="submit()">Submit</button>
             </form>
         </div>
         </div>
@@ -199,6 +202,9 @@
         </div>
     </div>
 </div>
+
+<script src="../Javascript/logIn.js"></script>
+<script src="../Javascript/contact.js"></script>
 
 <footer>
     2023 © Host-Your-Event · Privacy Policy and Cookies Policy ·
