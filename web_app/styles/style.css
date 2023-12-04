@@ -137,3 +137,13 @@ footer {
 Img {
     border-radius: 5px;
 }
+
+.nav-item {
+    padding-left: 20px;
+}
+
+.dropdown-menu {
+    background-color: #ccc;;
+  }
+
+  
