@@ -5,4 +5,10 @@ function submitForm() {
     var email = document.getElementById('email').value;
     var comments = document.getElementById('comments').value;
 
+    alert("Form submitted!\n\nFirst Name: " + firstName +
+            "\nLast Name: " + lastName +
+            "\nEmail: " + email +
+            "\nComments: " + comments);
+       
+            document.getElementById('submit').reset();
 }
