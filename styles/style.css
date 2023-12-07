@@ -313,8 +313,14 @@ select {
     padding-top: 15px;
   }
 
+  }
 
+  @media (max-width: 400px) {
 
+    .form-box {
+        width: 200px;
+        font-size: 10px;
+        }
   }
 
    
