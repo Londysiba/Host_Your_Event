@@ -264,6 +264,7 @@ select {
 
     .navbar {
         padding-right: 20px;
+        padding-left: 0px;
     }
 
     .container-about img {
