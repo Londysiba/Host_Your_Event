@@ -61,7 +61,7 @@ body {
     margin: 200px 100px 60px 100px;
     color: red;
     background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-    padding: 20px 40px 40px 40px;
+    padding: 20px 40px 20px 40px;
     border-radius: 4px;
     text-align: center;
 }
@@ -300,7 +300,7 @@ select {
   }
 
   .container3 {
-  margin: 50px 50px 0px 50px;
+  margin: 40px 40px 0px 40px;
   }
 
   .form-box {
@@ -321,6 +321,9 @@ select {
         width: 220px;
         font-size: 10px;
         }
+        .container3 {
+            margin: 30px 30px 0px 30px;
+            }
   }
 
    
