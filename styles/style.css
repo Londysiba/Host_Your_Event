@@ -318,7 +318,7 @@ select {
   @media (max-width: 400px) {
 
     .form-box {
-        width: 200px;
+        width: 220px;
         font-size: 10px;
         }
   }
