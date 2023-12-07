@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="HOST YOUR EVENT website, #mc">
+    <meta name="description" content="HOST YOUR EVENT website, web development">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOST YOUR EVENT website</title>
     <link rel="stylesheet" href="../styles/style.css">
@@ -14,6 +14,7 @@
         <script src="https://kit.fontawesome.com/6655e2669d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container-fluid">
@@ -29,48 +30,43 @@
                         <a class="nav-link" href="#about-us">About Us</a>
                         <a class="nav-link" href="/eventPlanner.html">Event Planner</a>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button"
-                          data-bs-toggle="dropdown" aria-expanded="true">
-                          Our Services
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="true">
+                            Our Services
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                              <a class="dropdown-item" href="/decor.html">Decor</a>
+                              <a class="dropdown-item" href="../services/decor.html">Decor</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/catering.html">Caterings</a>
+                              <a class="dropdown-item" href="../services/catering.html">Caterings</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/bakery.html">bakery</a>
+                              <a class="dropdown-item" href="../services/bakery.html">bakery</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/makeUp.html">Make-Up Artists</a>
+                              <a class="dropdown-item" href="../services/makeUp.html">Make-Up Artists</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/Hair-Stylists.html">Hair-Stylists</a>
+                              <a class="dropdown-item" href="../services/Hair-Stylists.html">Hair-Stylists</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/soundSystem.html">Sound System</a>
+                              <a class="dropdown-item" href="../services/soundSystem.html">Sound System</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/photographer.html">Photographers</a>
+                              <a class="dropdown-item" href="../services/photographer.html">Photographers</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/nailArtists.html">Nail Artists</a>
+                              <a class="dropdown-item" href="../services/nailArtists.html">Nail Artists</a>
                             </li>
                             <li>
-                              <a class="dropdown-item" href="/venue.html">Venue</a>
+                              <a class="dropdown-item" href="../services/venue.html">Venue</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="/mc.html">mc</a>
+                                <a class="dropdown-item" href="../services/mc.html">MC</a>
                               </li>
                           </ul>
                           </li>
-                          <div class="search">
-                            <label for="locationInput"></label>
-                            <input type="text" id="locationInput" placeholder="Search your location...">
-                            <button onclick="searchLocation()">Search</button>
-                        </div>
                           <li class="nav-item">
                             <a class="cta btn btn-primary shadow-sm" href="#contact-us">Contact Us</a>
                           </li>
@@ -93,33 +89,51 @@
         </nav>
     </div>
 
-    <div class="containers">
-        <h1>HOST YOUR EVENT</h1>
-        <p>Creating your event in 1 click!</p>
-    </div>
+    <div class="payments">
+        <h2>Payment Details</h2>
+        <form action="/process-payment" method="post">
+          <label for="nameOnCard">Name on Card</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Miss L Dlamini" required>
 
-    <div class="container-service">
-        <h1>Book Your MC</h1>
-        <h2>###### LIST OF AVAILABLE MC ######</h2>
-    </div>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
 
+            <label for="expiryDate">Expiry Date</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+            <h3>Billing Address</h3>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Londeka Dlamini" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Street, City" required>
+
+            <label for="zipCode">Zip Code</label>
+            <input type="text" id="zipCode" name="zipCode" placeholder="12345" required>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
     <div class="container3">
         <div class="row">
             <div class="col-md-6">
                 <h2 class="mb-3" id="contact-us">Contact us here!</h2>
                 <div class="form-box">
                 <form>
-                  <li><label for="firstName">Enter Firt Name:</label>
-                    <input type="text" id="firstName" name="firstName" required></li>
-    
-                    <li><label for="lastName">Enter Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required></li>
+                    <li><label for="firstName">Enter Firt Name:</label>
+                        <input type="text" id="firstName" name="firstName" required></li>
+        
+                        <li><label for="lastName">Enter Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required></li>
 
                     <li><label for="email">Enter Email Address:</label>
                     <input type="email" id="email" name="email" required></li>
 
                     <Li><label for="comments">Service you are enquiring about:</label>
-                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea></li>
+                    <textarea id="comments" name="comments" rows="4" cols="35"></textarea></li>
 
                     <button type="submit">Submit</button>
                 </form>
@@ -129,21 +143,20 @@
                 <h2 class="mb-3">Our Socials</h2>
                 <p>Find us on social media and conect with us now!</p>
                 <ul>
-                  <a href="https://www.facebook.com/londee.dhlaminie" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i></a>
-                  <a href="https://www.instagram.com/londysiba" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a>
-                  <a href="https://twitter.com/londysiba" target="_blank"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
-                  <a href="https://wa.me/0730241077" target="_blank"><i class="fa-brands fa-whatsapp fa-beat"></i></a>
-                  <a href="https://www.linkedin.com/in/londeka-dlamini" target="_blank"><i class="fa-brands fa-linkedin fa-beat"></i></a>
-              </ul>
+                    <a href="https://www.facebook.com/londee.dhlaminie" target="_blank"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                    <a href="https://www.instagram.com/londysiba" target="_blank"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                    <a href="https://twitter.com/londysiba" target="_blank"><i class="fa-brands fa-x-twitter fa-beat"></i></a>
+                    <a href="https://wa.me/0730241077" target="_blank"><i class="fa-brands fa-whatsapp fa-beat"></i></a>
+                    <a href="https://www.linkedin.com/in/londeka-dlamini" target="_blank"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                </ul>
             </div>
         </div>
     </div>
 
-    <script src="../Javascript/services.js"></script>
     <script src="../Javascript/contact.js"></script>
-    
+
     <footer>
-        2023 © Host-Your-Event · Privacy Policy and Cookies Policy · Developed by - <a href="https://github.com/Londysiba" target="_blank"> Github Profile.</a>
+        2023 © Host-Your-Event · Privacy Policy and Cookies Policy · Developed by - <a href="https://github.com/Londysiba" target="_blank">Github Profile</a>
     </footer>
     </body>
     </html>
