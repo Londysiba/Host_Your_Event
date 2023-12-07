@@ -10,34 +10,64 @@ body {
     color: #ffffff; 
 }
 
+.back {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    background-size: cover;
+    justify-content: center;
+    background-image: url(../images/backuse.jpg);
+}
+
+
+.back2 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    background-size: cover;
+    justify-content: center;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
 .navbar {
     padding-left: 230px;
 }
 
 .containers {
-    margin: 200px 100px 0px 100px;
-    color: red;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 40px;
+    margin: 250px 100px 210px 100px;
+    color: black;
+    padding: 10px 40px 40px 40px;
     border-radius: 4px;
     text-align: center;
+    font-size: 30px;
 }
 
+.containers h1 {
+    font-size: 70px;
+}
+
+.containers a {
+    font-size: 20px;
+}
 .container-service h2 {
     color: black;
 }
 
 .container-service {
-    margin: 200px 100px 150px 100px;
+    margin: 200px 100px 60px 100px;
     color: red;
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 40px;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 20px 40px 40px 40px;
     border-radius: 4px;
     text-align: center;
 }
 
 .service-item {
-    margin: 20px 0;
+    margin: 40px 0 0 0;
     color: red;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 20px;
