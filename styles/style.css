@@ -33,14 +33,16 @@ body {
     background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
 }
 
-
 .navbar {
-    padding-right: 0px;
-    padding-left: 330px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 90px;
+    margin: 30px 120px 0px 120px;
+    padding: 0;
+    font-size: 20px;
+    box-shadow: 20px;
 }
-
 .containers {
-    margin: 250px 100px 210px 100px;
+    margin: 400px 100px 210px 100px;
     color: black;
     padding: 10px 40px 40px 40px;
     border-radius: 4px;
@@ -188,10 +190,8 @@ Img {
 }
 
 .search {
-    padding-left: 30px;
-    padding-right: 20px;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .dropdown-menu {
@@ -200,11 +200,12 @@ Img {
 
   .search input {
     background: transparent;
-    font-size: 16px;
+    font-size: 23px;
+    border-radius: 90px;
   }
 
   .search button {
-    padding: 4px;
+    padding: 5px;
     background-color: red;
     color: azure;
     border: none;
@@ -262,13 +263,14 @@ select {
         font-size: 10px;
     }
 
-    .navbar {
-        padding-right: 20px;
-        padding-left: 0px;
-    }
-
     .container-about img {
         width: 400px;
+    }
+
+    .navbar {
+        background-color: none;
+        font-size: 10px;
+        
     }
 
     .containers {
@@ -325,10 +327,12 @@ select {
         font-size: 10px;
         }
 
+        .navbar {
+            font-size: 10px;
+            
+        }
+
     .container3 {
         margin: 30px 30px 0px 30px;
             }
   }
-
-
-   
