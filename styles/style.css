@@ -274,6 +274,10 @@ select {
         
     }
 
+    button {
+        color: red;
+    }
+
     .containers {
     margin: 240px 50px 50px 50px;
     font-size: 10px;
