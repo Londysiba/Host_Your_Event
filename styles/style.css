@@ -195,7 +195,7 @@ Img {
 }
 
 .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: red;
   }
 
   .search input {
@@ -255,6 +255,12 @@ select {
 .payments button:hover {
     background-color: #45a049;
 }
+
+.navbar-toggler {
+    background-color: grey;
+    border-color: blue;
+    color: blue;
+  }
 
   @media (max-width: 820px) {
     .container-about {
