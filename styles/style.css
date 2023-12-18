@@ -200,7 +200,7 @@ Img {
 
   .search input {
     background: transparent;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 90px;
   }
 
@@ -269,13 +269,13 @@ select {
 
     .navbar {
         background-color: none;
-        font-size: 10px;
+        font-size: 13px;
         color: black;
         
     }
 
     .containers {
-    margin: 150px 50px 50px 50px;
+    margin: 240px 50px 50px 50px;
     font-size: 10px;
     }
 
@@ -321,6 +321,22 @@ select {
 
   }
 
+  @media (max-width: 1024px) {
+    .navbar {
+        background-color: none;
+        font-size: 13px;
+        color: black;
+            
+        }
+   
+  .search input {
+    background: transparent;
+    font-size: 12px;
+    border-radius: 90px;
+  }
+
+  }
+
   @media (max-width: 400px) {
 
     .form-box {
@@ -328,10 +344,14 @@ select {
         font-size: 10px;
         }
 
-        .navbar {
-            font-size: 10px;
-            color: black;
+    .navbar {
+        background-color: none;
+        font-size: 13px;
+        color: black;
             
+        }
+    a .navbar-brand {
+            font-size: 6px;
         }
 
     .container3 {
