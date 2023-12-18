@@ -1,16 +1,16 @@
 function login() {
     alert('Login successful!');
-    toggleFormsAndButtons();
+    window.location.href = '/index.html';
 }
 
 function register() {
     alert('Account created successfully!');
-    toggleFormsAndButtons();
+    window.location.href = '/index.html';
 }
 
 function logout() {
     alert('Logout successful!');
-    toggleFormsAndButtons();
+    window.location.href = '/index.html';
 }
 
 function toggleFormsAndButtons() {
